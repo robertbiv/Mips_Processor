@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sim_1/new/testbench.v,1681863019,verilog,,,,testbench,,,,,,,,
+C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/ConnectionBoard.v,1681862039,verilog,,C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v,,ConnectionBoard,,,,,,,,
+C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v,1682474611,verilog,,C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/scdatamem.v,,Addr;TwoOneMux;alu;controlUnit;leftShift;pc;pcAdd;pcMux;regfile;sccpu;sextChip,,,,,,,,
+C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/scdatamem.v,1681862462,verilog,,C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/scinstmem.v,,DataMem;scdatamem,,,,,,,,
+C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/scinstmem.v,1681678405,verilog,,C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sim_1/new/testbench.v,,instrMem;scinstmem,,,,,,,,

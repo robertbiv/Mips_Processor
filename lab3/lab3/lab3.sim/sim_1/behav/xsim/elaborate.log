@@ -1,0 +1,27 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 32 for port 'optn1' [C:/Users/Bobby School/Desktop/Vivado Projects/Lab3/lab3/lab3.srcs/sources_1/new/MIPSmachine.v:274]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 5 for port 'funct' [C:/Users/Bobby School/Desktop/Vivado Projects/Lab3/lab3/lab3.srcs/sources_1/new/MIPSmachine.v:296]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'we' [C:/Users/Bobby School/Desktop/Vivado Projects/Lab3/lab3/lab3.srcs/sources_1/new/MIPSmachine.v:297]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 6 for port 'saIn' [C:/Users/Bobby School/Desktop/Vivado Projects/Lab3/lab3/lab3.srcs/sources_1/new/MIPSmachine.v:298]
+WARNING: [VRFC 10-3705] select index 0 into 'register' is out of bounds [C:/Users/Bobby School/Desktop/Vivado Projects/Lab3/lab3/lab3.srcs/sources_1/new/MIPSmachine.v:42]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pcMux
+Compiling module xil_defaultlib.pc
+Compiling module xil_defaultlib.instrMem
+Compiling module xil_defaultlib.pcAdd
+Compiling module xil_defaultlib.controlUnit
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.shiftMux
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.MIPSmachine
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav

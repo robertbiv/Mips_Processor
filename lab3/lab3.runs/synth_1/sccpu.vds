@@ -1,0 +1,399 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Apr 18 17:39:38 2023
+# Process ID: 20336
+# Current directory: C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.runs/synth_1
+# Command line: vivado.exe -log sccpu.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sccpu.tcl
+# Log file: C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.runs/synth_1/sccpu.vds
+# Journal file: C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.runs/synth_1\vivado.jou
+# Running On: Bobbys-Surface, OS: Windows, CPU Frequency: 3302 MHz, CPU Physical cores: 4, Host memory: 17005 MB
+#-----------------------------------------------------------
+source sccpu.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 394.484 ; gain = 58.023
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/utils_1/imports/synth_1/MIPSmachine.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/utils_1/imports/synth_1/MIPSmachine.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top sccpu -part xc7z014sclg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z014s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z014s'
+INFO: [Device 21-403] Loading part xc7z014sclg484-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25608
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+WARNING: [Synth 8-10388] /* is inside a comment [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:654]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1233.809 ; gain = 409.031
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sccpu' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:485]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:467]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (0#1) [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:467]
+INFO: [Synth 8-6157] synthesizing module 'pcAdd' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:418]
+INFO: [Synth 8-6155] done synthesizing module 'pcAdd' (0#1) [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:418]
+INFO: [Synth 8-6157] synthesizing module 'controlUnit' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'controlUnit' (0#1) [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:21]
+INFO: [Synth 8-6157] synthesizing module 'TwoOneMux' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:379]
+INFO: [Synth 8-6155] done synthesizing module 'TwoOneMux' (0#1) [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:379]
+WARNING: [Synth 8-689] width (5) of port connection 'TwoOneOut' does not match port width (32) of module 'TwoOneMux' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:531]
+WARNING: [Synth 8-689] width (5) of port connection 'TwoOneOut' does not match port width (32) of module 'TwoOneMux' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:533]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:282]
+WARNING: [Synth 8-6896] index 0 out of range inside initial block, initial block items will be ignored [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:310]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (0#1) [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:282]
+INFO: [Synth 8-6157] synthesizing module 'TwoOneMux2' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:393]
+INFO: [Synth 8-6155] done synthesizing module 'TwoOneMux2' (0#1) [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:393]
+INFO: [Synth 8-6157] synthesizing module 'sextChip' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:436]
+INFO: [Synth 8-6155] done synthesizing module 'sextChip' (0#1) [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:436]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:326]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:326]
+INFO: [Synth 8-6157] synthesizing module 'Addr' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:408]
+INFO: [Synth 8-6155] done synthesizing module 'Addr' (0#1) [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:408]
+INFO: [Synth 8-6157] synthesizing module 'pcMux' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:361]
+INFO: [Synth 8-6155] done synthesizing module 'pcMux' (0#1) [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:361]
+INFO: [Synth 8-6155] done synthesizing module 'sccpu' (0#1) [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:485]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1333.160 ; gain = 508.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1333.160 ; gain = 508.383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1333.160 ; gain = 508.383
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 1333.160 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/constrs_1/new/FinalProject1.xdc]
+Finished Parsing XDC File [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/constrs_1/new/FinalProject1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/constrs_1/new/FinalProject1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sccpu_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sccpu_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1438.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1438.453 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z014sclg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:30 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'pcsrc_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:39]
+WARNING: [Synth 8-327] inferring latch for variable 'aluc_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'shift_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'wreg_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'wmem_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'regrt_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:40]
+WARNING: [Synth 8-327] inferring latch for variable 'jal_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:41]
+WARNING: [Synth 8-327] inferring latch for variable 'm2reg_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:42]
+WARNING: [Synth 8-327] inferring latch for variable 'aluimm_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:43]
+WARNING: [Synth 8-327] inferring latch for variable 'sext_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'TwoOneOut_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:387]
+WARNING: [Synth 8-327] inferring latch for variable 'TwoOneOut_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:401]
+WARNING: [Synth 8-327] inferring latch for variable 'z_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:354]
+WARNING: [Synth 8-327] inferring latch for variable 'r_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:335]
+WARNING: [Synth 8-327] inferring latch for variable 'pcMuxOut_reg' [C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/sources_1/new/sccpu.v:370]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:31 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 8     
+	   4 Input   32 Bit        Muxes := 1     
+	   8 Input    4 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 1     
+	   9 Input    4 Bit        Muxes := 1     
+	  12 Input    4 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	  10 Input    2 Bit        Muxes := 2     
+	  12 Input    2 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 2     
+	   8 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 47    
+	   4 Input    1 Bit        Muxes := 3     
+	   7 Input    1 Bit        Muxes := 2     
+	   5 Input    1 Bit        Muxes := 1     
+	   6 Input    1 Bit        Muxes := 3     
+	  10 Input    1 Bit        Muxes := 3     
+	   8 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 170 (col length:60)
+BRAMs: 214 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[31]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[30]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[29]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[28]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[27]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[26]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[25]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[24]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[23]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[22]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[21]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[20]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[19]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[18]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[17]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[16]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[15]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[14]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[13]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[12]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[11]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[10]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[9]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[8]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[7]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[6]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[5]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[4]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[3]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[2]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[1]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToRegfile/TwoOneOut_reg[0]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[31]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[30]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[29]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[28]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[27]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[26]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[25]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[24]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[23]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[22]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[21]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[20]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[19]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[18]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[17]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[16]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[15]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[14]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[13]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[12]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[11]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[10]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[9]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[8]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[7]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[6]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[5]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[4]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[3]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[2]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[1]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToWn/TwoOneOut_reg[0]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[31]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[30]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[29]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[28]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[27]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[26]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[25]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[24]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[23]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[22]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[21]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[20]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[19]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[18]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[17]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[16]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[15]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[14]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[13]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[12]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[11]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[10]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[9]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[8]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[7]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[6]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[5]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[4]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[3]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[2]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[1]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlua/TwoOneOut_reg[0]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlub/TwoOneOut_reg[31]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlub/TwoOneOut_reg[30]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlub/TwoOneOut_reg[29]) is unused and will be removed from module sccpu.
+WARNING: [Synth 8-3332] Sequential element (muxToAlub/TwoOneOut_reg[28]) is unused and will be removed from module sccpu.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:01:15 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:01:26 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:26 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:01:27 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:01:35 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:01:35 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:01:35 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:01:35 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:01:35 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:01:35 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    32|
+|3     |LUT1   |    18|
+|4     |LUT2   |   101|
+|5     |LUT3   |    45|
+|6     |LUT4   |    37|
+|7     |LUT5   |   205|
+|8     |LUT6   |   821|
+|9     |MUXF7  |   256|
+|10    |MUXF8  |   108|
+|11    |FDCE   |   992|
+|12    |FDRE   |    32|
+|13    |LD     |    36|
+|14    |LDC    |    10|
+|15    |LDP    |     1|
+|16    |IBUF   |    66|
+|17    |OBUF   |    97|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:01:35 . Memory (MB): peak = 1438.453 ; gain = 613.676
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 240 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:01:31 . Memory (MB): peak = 1438.453 ; gain = 508.383
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:01:35 . Memory (MB): peak = 1438.453 ; gain = 613.676
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 1438.453 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 443 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1438.453 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 47 instances were transformed.
+  LD => LDCE: 36 instances
+  LDC => LDCE: 10 instances
+  LDP => LDPE: 1 instance 
+
+Synth Design complete, checksum: 5ea00865
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 120 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:02:01 . Memory (MB): peak = 1438.453 ; gain = 1019.090
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.runs/synth_1/sccpu.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sccpu_utilization_synth.rpt -pb sccpu_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 18 17:41:53 2023...

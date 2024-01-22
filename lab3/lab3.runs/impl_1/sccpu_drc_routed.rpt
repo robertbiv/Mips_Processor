@@ -1,0 +1,115 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Tue Apr 18 17:43:54 2023
+| Host         : Bobbys-Surface running 64-bit major release  (build 9200)
+| Command      : report_drc -file sccpu_drc_routed.rpt -pb sccpu_drc_routed.pb -rpx sccpu_drc_routed.rpx
+| Design       : sccpu
+| Device       : xc7z014sclg484-2
+| Speed File   : -2
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 15
++----------+----------+----------------------------+------------+
+| Rule     | Severity | Description                | Violations |
++----------+----------+----------------------------+------------+
+| NSTD-1   | Warning  | Unspecified I/O Standard   | 1          |
+| PDRC-153 | Warning  | Gated clock check          | 12         |
+| UCIO-1   | Warning  | Unconstrained Logical Port | 1          |
+| ZPS7-1   | Warning  | PS7 block required         | 1          |
++----------+----------+----------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+NSTD-1#1 Warning
+Unspecified I/O Standard  
+163 out of 163 logical ports use I/O standard (IOSTANDARD) value 'DEFAULT', instead of a user assigned specific value. This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all I/O standards. This design will fail to generate a bitstream unless all logical ports have a user specified I/O standard value defined. To allow bitstream creation with unspecified I/O standard values (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks NSTD-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run. Problem ports: alu_out[31:0], clk, clrn, data[31:0], inst[31:0], mem[31:0], pc[31:0]
+wmem.
+Related violations: <none>
+
+PDRC-153#1 Warning
+Gated clock check  
+Net alu_reg/E[0] is a gated clock net sourced by a combinational pin alu_reg/pcsrc_reg[0]_i_2/O, cell alu_reg/pcsrc_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net alu_reg/z_reg_i_1_n_1 is a gated clock net sourced by a combinational pin alu_reg/z_reg_i_1/O, cell alu_reg/z_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#3 Warning
+Gated clock check  
+Net control_reg/aluc_reg[0]_i_2_n_1 is a gated clock net sourced by a combinational pin control_reg/aluc_reg[0]_i_2/O, cell control_reg/aluc_reg[0]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#4 Warning
+Gated clock check  
+Net control_reg/aluc_reg[1]_i_2_n_1 is a gated clock net sourced by a combinational pin control_reg/aluc_reg[1]_i_2/O, cell control_reg/aluc_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#5 Warning
+Gated clock check  
+Net control_reg/aluc_reg[2]_i_2_n_1 is a gated clock net sourced by a combinational pin control_reg/aluc_reg[2]_i_2/O, cell control_reg/aluc_reg[2]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#6 Warning
+Gated clock check  
+Net control_reg/aluc_reg[3]_i_2_n_1 is a gated clock net sourced by a combinational pin control_reg/aluc_reg[3]_i_2/O, cell control_reg/aluc_reg[3]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#7 Warning
+Gated clock check  
+Net control_reg/m2reg_reg_i_2_n_1 is a gated clock net sourced by a combinational pin control_reg/m2reg_reg_i_2/O, cell control_reg/m2reg_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#8 Warning
+Gated clock check  
+Net control_reg/pcsrc_reg[1]_i_2_n_1 is a gated clock net sourced by a combinational pin control_reg/pcsrc_reg[1]_i_2/O, cell control_reg/pcsrc_reg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#9 Warning
+Gated clock check  
+Net control_reg/regrt_reg_i_2_n_1 is a gated clock net sourced by a combinational pin control_reg/regrt_reg_i_2/O, cell control_reg/regrt_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#10 Warning
+Gated clock check  
+Net control_reg/shift_reg_i_2_n_1 is a gated clock net sourced by a combinational pin control_reg/shift_reg_i_2/O, cell control_reg/shift_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#11 Warning
+Gated clock check  
+Net control_reg/wmem_reg_i_2_n_1 is a gated clock net sourced by a combinational pin control_reg/wmem_reg_i_2/O, cell control_reg/wmem_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#12 Warning
+Gated clock check  
+Net control_reg/wreg_reg_i_2_n_1 is a gated clock net sourced by a combinational pin control_reg/wreg_reg_i_2/O, cell control_reg/wreg_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+UCIO-1#1 Warning
+Unconstrained Logical Port  
+160 out of 163 logical ports have no user assigned specific location constraint (LOC). This may cause I/O contention or incompatibility with the board power or connectivity affecting performance, signal integrity or in extreme cases cause damage to the device or the components to which it is connected. To correct this violation, specify all pin locations. This design will fail to generate a bitstream unless all logical ports have a user specified site LOC constraint defined.  To allow bitstream creation with unspecified pin locations (not recommended), use this command: set_property SEVERITY {Warning} [get_drc_checks UCIO-1].  NOTE: When using the Vivado Runs infrastructure (e.g. launch_runs Tcl command), add this command to a .tcl file and add that file as a pre-hook for write_bitstream step for the implementation run.  Problem ports: alu_out[31:0], data[31:0], inst[31:0], mem[31:0], pc[31:0].
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

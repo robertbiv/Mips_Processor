@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:{C:/Users/Bobby School/Desktop/Vivado Projects/FinalProject/lab3/lab3.srcs/constrs_1/new/FinalProject1.xdc} rfile:../../../lab3.srcs/constrs_1/new/FinalProject1.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA9 [get_ports clk]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AB11 [get_ports wmem]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN AA11 [get_ports clrn]
